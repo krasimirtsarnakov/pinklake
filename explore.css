@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 5px 2px 4px black;
+}
+body {
+    background: url("explorebackground.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contentbox {
+    width: 80vw;
+    margin: 7vh auto;
+    display: flex;
+    flex-flow: column;
+}
+header {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(238, 77, 104);
+    border-bottom: 3px rgba(167, 59, 59, 0.35) solid;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+header .logo img {
+    width: 68%;
+    position: relative;
+    top: -38%;}
+.toggle {
+    font-size: 25px;
+    color: white;
+    right: 15px;
+    position: fixed;
+    top: 10px;
+    z-index: 1;
+    transition: 0.4s;
+}
+.menu{
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(236, 129, 147);
+    right: 0;
+    top: 0;
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.4s;
+}
+.menu ul li {
+    list-style-type: none;
+}
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 3;
+    font-size: 25px;
+}
+.menu i {
+    position: absolute;
+    top: 2%;
+    right: 40%;
+    color: white;
+    font-size: 30px;
+}
+.imgbox {
+    display: flex;
+    justify-content: space-between;
+}
+.contentbox img {
+    width: 38vw;
+    height: 42vh;
+    box-shadow:rgb(0, 0, 0) 0 0 30px 2px;
+    border-radius: 8px;
+    image-rendering: -webkit-optimize-contrast;
+}
+h1{
+    font-size: 5em;
+    text-align: center;
+    font-weight: 200;
+}
+small{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 3vh;
+    font-weight: 100;
+}
+p {
+    margin: 5vh auto;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+}
+.imgbox1 img{
+    width: 100%;
+    height: 45vh;
+    box-shadow:rgb(0, 0, 0) 0 0 30px 2px;
+    border-radius: 8px;
+    image-rendering: -webkit-optimize-contrast;
+}
+#verticalimg {
+  width: 43vw;
+    height: 75vh;
+    float: left;
+    margin: 35px 42px 17px 0;
+}
+.bottombox {
+    width: 100%;
+}
+.bottombox small{
+ font-size: 1em;
+}
+ .bottombox h2{
+    text-align: center;
+    font-size: 5em;
+    font-weight: 100;
+}
+footer {
+    display: flex;
+    flex-flow: row;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    border-top: 2px solid rgb(230, 184, 184);
+    background-color: rgb(238, 77, 104);
+}
+footer .icons {
+    flex-basis: 33%;
+    align-self: center;
+}
+footer .icons ul{
+    display: inline-flex;
+    list-style-type: none;
+}
+footer .icons ul li a{
+    padding-left: 3vw;
+    font-size: 28px;
+    color: white;
+}
+footer .icons ul li a i{
+    text-shadow: none;
+}
+footer .icons ul li a i:hover {
+    text-shadow: 5px 2px 4px #231e1e;
+    transform: translateY(-2px); 
+}
+footer i {
+    transition: 0.3s;
+}
+footer .copyright {
+    flex-basis: 33%;
+    text-align: center;
+    align-self: center;
+    font-size: 6px;
+    font-weight: 100;
+}
+footer .footerinfo {
+    flex-basis: 33%;
+    text-align: center;
+    align-self: center;
+}
+footer .footerinfo ul {
+    list-style-type: none;
+    line-height: 16px;
+    font-weight: 100;
+    display: inline-flex;
+    width: 100%;    
+    justify-content: space-evenly;
+}
+@media only screen and (max-width: 800px) {
+    #verticalimg {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    header .logo img {
+        width: 48%;
+        top:1px;
+        left: -10px;
+    }
+    footer {
+        flex-flow: row;
+        height: 10vh;
+        padding-top: 4px;
+    }
+    footer .icons {
+        flex-basis: 50%;
+        text-align: center;
+        padding-bottom: 17px;
+    }
+    footer .icons ul li a {
+    font-size: 25px;
+    }
+    footer .copyright {
+        flex-basis: 50%;
+        text-align: center;
+        font-size: 4px;
+        padding-bottom: 25px;
+    }
+    footer .footerinfo {
+      position: absolute;
+      bottom: 2px;
+      width: 100%;
+      font-size: 15px;
+    }
+    .imgbox {
+        flex-direction: column;
+    }
+    .contentbox img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

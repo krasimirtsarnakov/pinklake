@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Pink Lake</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logopinklake.png" alt="myLogo">
+        </div>
+        <div class="toggle">
+            <i onclick="myFunction()" id="bars" class="fa fa-bars"></i>
+        </div>
+    </header>
+    <video src="lakevideo.mp4" muted loop autoplay></video>
+    <section class="showcase active">
+        <h1>The pink "Lake Hillier"</h1>
+        <h2>Australian phenomenon </h2>
+        <p>
+            Lake Hillier is a saline lake on the edge of Middle Island, the largest of the islands and islets that make up the Recherche Archipelago in the Goldfields-Esperance region, off the south coast of Western Australia. It is particularly notable for its pink colour. A long and thin shore divides the Southern Ocean from the lake.
+        </p>
+        <button><a href="./explore.html">EXPLORE</a></button>
+           </div>
+    </section>
+    <footer>
+        <div class="icons">
+            <ul>
+                <li><a href="./index.html"><i class="fa fa-home"></i>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://www.google.com/"><i class="fa fa-google-plus"></i>
+                    </a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <small>
+                Copyright By Tsarnakov <br> 2021
+            </small>
+        </div>
+        <div class="footerinfo">
+            <ul>
+                <li>Terms</li>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </footer>
+   <div id="myMenu" class="menu">
+    <!-- <i class="fa fa-close"></i> -->
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./signin.html">Sign in</a></li>
+        <li><a href="./sign.html">Sign up</a></li>
+    </ul>
+   </div>
+   <script>
+    function myFunction() {
+      var x = document.getElementById("myMenu");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>
